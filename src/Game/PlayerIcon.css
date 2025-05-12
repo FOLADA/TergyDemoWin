@@ -1,0 +1,59 @@
+.player-icon-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+  transition: transform 1s ease-in-out;
+}
+
+.player-icon {
+  transition: color 0.3s ease;
+}
+
+.player-icon.correct {
+  color: #22c55e; /* green-500 */
+}
+
+.player-icon.incorrect {
+  color: #ef4444; /* red-500 */
+}
+
+.player-icon.neutral {
+  color: #7c3aed; /* violet */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes crash {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 0.5s ease;
+}
+
+.animate-crash {
+  animation: crash 0.5s ease;
+}

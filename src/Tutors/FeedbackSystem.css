@@ -1,0 +1,86 @@
+/* src/components/FeedbackForm.css */
+.feedback-section {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: grid;
+  gap: 1rem;
+}
+
+.feedback-section h3 {
+  font-family: 'Kartuli', serif;
+  color: #530a62;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.feedback-section label {
+  font-weight: 600;
+  color: #444;
+}
+
+.feedback-section select,
+.feedback-section textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-section select:focus,
+.feedback-section textarea:focus {
+  border-color: #8d0a75;
+  box-shadow: 0 0 0 3px rgba(141,10,117,0.1);
+  outline: none;
+}
+
+.feedback-section textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.feedback-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #8d0a75 0%, #530a62 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-self: start;
+}
+
+.feedback-submit .button-icon {
+  font-size: 1.2em;
+}
+
+.feedback-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(143,10,117,0.3);
+}
+
+.feedback-thanks {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background: #f0e6ed;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.feedback-thanks h4 {
+  color: #530a62;
+  font-family: 'Kartuli', serif;
+  font-size: 1.4rem;
+}

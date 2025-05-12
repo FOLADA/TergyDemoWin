@@ -1,0 +1,28 @@
+.MaleDaemateba-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    margin-bottom: 250px;
+}
+.MaleDaemateba-h1{
+    font-size: 2.5rem;
+    color: #8d0a75;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.MaleDaemateba-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8d0a75;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}

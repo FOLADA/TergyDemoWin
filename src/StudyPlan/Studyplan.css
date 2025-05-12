@@ -1,0 +1,101 @@
+/* StudyPlan.css */
+.study-plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff;
+}
+
+.study-plan-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #9d1ac2;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.study-plan-description {
+  font-size: 1.2rem;
+  color: #9d1ac2;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.study-plan-input {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border: 2px solid #9d1ac2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #9d1ac2;
+  width: 200px;
+}
+
+.study-plan-button {
+  background: #9d1ac2;
+  color: #ffffff;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.study-plan-button:hover {
+  background: #7a1498;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.study-plan-button:active {
+  transform: scale(0.98);
+}
+
+.study-plan-content {
+  margin-top: 30px;
+  border: 1px solid #9d1ac2;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 100%;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #9d1ac2;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.study-plan-content pre {
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .study-plan-title {
+    font-size: 1.8rem;
+  }
+  .study-plan-description,
+  .study-plan-content pre {
+    font-size: 1rem;
+  }
+  .input-wrapper {
+    flex-direction: column;
+  }
+  .study-plan-input,
+  .study-plan-button {
+    width: 100%;
+  }
+}

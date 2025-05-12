@@ -1,0 +1,130 @@
+.tutors-section {
+    background: #ffffff;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', 'Kartuli', sans-serif;
+  }
+  
+  .section-title {
+    color: #530a62;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tutors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  .tutor-card {
+    background: #fdfdfd;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0f0f0;
+  }
+  
+  .tutor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tutor-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .tutor-name {
+    color: #3d0c57;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .tutor-tagline {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    min-height: 4em;
+  }
+  
+  .profile-button {
+    display: inline-block;
+    background: #3d0c57;
+    color: white;
+    padding: 0.7rem 1.75rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(61, 12, 87, 0.25);
+  }
+  
+  .georgian-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .floating-char {
+    position: absolute;
+    font-family: 'Kartuli', serif;
+    font-size: 2rem;
+    color: #000;
+    opacity: 0.04;
+    animation: float 8s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .tutor-photo {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tutors-section {
+      padding: 2rem 1rem;
+    }
+  
+    .tutor-card {
+      padding: 1.5rem;
+    }
+  }
+  

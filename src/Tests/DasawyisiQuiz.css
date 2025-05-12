@@ -1,0 +1,198 @@
+/* ძირითადი კონტეინერი */
+.quiz-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ქვიზის სათაური */
+.quiz-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+    color: #8d0a75;
+  margin-bottom: 20px;
+}
+
+/* შეკითხვების კონტეინერი */
+.questions-container {
+  margin-bottom: 30px;
+}
+
+/* თითოეული შეკითხვის სტილი */
+.question {
+  margin-bottom: 20px;
+}
+
+/* შეკითხვის ტექსტი */
+.question p {
+  font-size: 18px;
+  color: #8d0a75;
+  margin-bottom: 10px;
+}
+
+/* რადიო ბუტონების სტილი */
+.option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #8d0a75; /* Modern browsers */
+}
+
+.option {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* სწორი პასუხის სტილი */
+.correct-answer {
+  background-color: #d4edda;
+  color: #8d0a75;
+  padding: 12px;
+  margin: 12px 0;
+  border-left: 5px solid #28a745;
+  border-radius: 5px;
+}
+
+/* რეკომენდაციების სტილი */
+.recommendation {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  margin: 12px 0;
+  border-left: 5px solid #dc3545;
+  border-radius: 5px;
+}
+
+/* შედეგების მონახაზი */
+.result {
+  margin-top: 30px;
+}
+
+/* საბოლოო შედეგის შთაბეჭდილება */
+.score h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/*  შედეგების რეკომენდაცია */
+.recommendation p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ხელახლა ჩატარების ღილაკი */
+.retake-button {
+  display: block;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.retake-button:hover {
+  background-color: #218838;
+}
+
+/* ქვიზის დასრულების ღილაკი */
+.submit-button {
+  display: block;
+  width: 100%;
+  background-color: #8d0a75;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #440639;
+}
+
+/* ვიზუალური ეფექტი ღილაკის დროს */
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+/* მობილურის ოპტიმიზაცია */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 15px;
+  }
+
+  .quiz-title {
+    font-size: 24px;
+  }
+
+  .question p {
+    font-size: 16px;
+  }
+
+  .option {
+    font-size: 14px;
+  }
+
+  .retake-button,
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .score h2 {
+    font-size: 20px;
+  }
+
+  .recommendation p {
+    font-size: 14px;
+  }
+}
+
+/* ძალიან მცირე ეკრანების ოპტიმიზაცია (მაგალითად, მობილური ტელეფონები) */
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 10px;
+  }
+
+  .quiz-title {
+    font-size: 20px;
+  }
+
+  .question p {
+    font-size: 14px;
+  }
+
+  .option {
+    font-size: 12px;
+  }
+
+  .retake-button,
+  .submit-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .score h2 {
+    font-size: 18px;
+  }
+
+  .recommendation p {
+    font-size: 12px;
+  }
+}

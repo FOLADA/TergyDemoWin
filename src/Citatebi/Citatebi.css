@@ -1,0 +1,156 @@
+.periphrazed-title-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.3rem;
+  color: #e0e0e0;
+}
+
+.periphrazed-title {
+  font-size: 2.5rem;
+  color: rgba(83, 10, 98, 0.98);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.periphrazed-box {
+  background: linear-gradient(160deg, #6a0a7e, #8d0a75);
+  border: 1px solid rgba(59, 4, 70, 0.98);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Header: title and toggle button */
+.periphrazed-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.periphrazed-box-title {
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  flex: 1;
+  font-weight: bold;
+}
+.periphrazed-box-button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.periphrazed-box-button:hover {
+  background: linear-gradient(360deg, var(--accent), var(--accent-dark));
+  transform: translateY(-0.5px);
+}
+
+/* Expanded content container */
+.periphrazed-expanded-container {
+  background: rgba(37, 2, 44, 0.8);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #420537;
+  align-items: center;
+  justify-content: center;
+}
+.periphrazed-expanded-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Note section toggle */
+.periphrazed-box-note {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+/* Note input container */
+.note-container {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 99%;
+}
+.note-container textarea {
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid #420537;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #2c3036;
+  color: #e0e0e0;
+  resize: vertical;
+}
+.note-container button {
+  align-self: flex-end;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.note-container button:hover {
+  background: linear-gradient(360deg, var(--accent), var(--accent-dark));
+}
+.back-link {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.back-link a {
+  color: rgba(83, 10, 98, 0.98);
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 1px solid rgba(37, 2, 44, 0.98);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+  background: linear-gradient(160deg, #6a0a7e, #8d0a75);
+  color: rgba(83, 10, 98, 0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .periphrazed-box {
+    padding: 1rem;
+  }
+  .periphrazed-box-title {
+    font-size: 1.1rem;
+  }
+  .periphrazed-box-button, .note-container button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Scrollbar styling within expanded content */
+.periphrazed-expanded-container::-webkit-scrollbar {
+  width: 6px;
+}
+.periphrazed-expanded-container::-webkit-scrollbar-thumb {
+  background: rgba(229, 192, 123, 0.4);
+  border-radius: 10px;
+}
+.periphrazed-expanded-container::-webkit-scrollbar-track {
+  background: #2c3036;
+}
